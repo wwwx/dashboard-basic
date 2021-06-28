@@ -1,0 +1,30 @@
+.page {
+    padding: 0 1rem;
+    background: #f1f5f9;
+}
+
+.page-head {
+    margin: 0 -1rem;
+    padding: 1rem;
+    background: #1e293b;
+    color: white;
+    font-size: 24px;
+    min-height: 150px;
+}
+
+.page-content {
+    height: calc(100vh - 150px);
+    margin-top: -5rem;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+}
