@@ -10,7 +10,9 @@ import {Router} from '@angular/router';
 export class HeaderComponent implements OnInit {
     @Output() toggleSidebarForme: EventEmitter<any> = new EventEmitter();
 
-    constructor(private auth: AuthService, private router: Router) { }
+    constructor(private auth: AuthService, private router: Router) {
+    }
+
     ngOnInit() {
     }
 

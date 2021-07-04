@@ -1,13 +1,18 @@
 <mat-toolbar>
     <mat-toolbar-row class="d-flex justify-content-between">
-        <button mat-icon-button (click)="toggleSidebar()"><mat-icon>menu</mat-icon></button>
+        <button (click)="toggleSidebar()" mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
         <div class="user">
-            <button mat-button [matMenuTriggerFor]="menu" class="d-flex align-items-center">
-                <img class="avatar" src="../../../../assets/user.jpg" alt="avatar" />User Name
+            <button [matMenuTriggerFor]="menu" class="d-flex align-items-center" mat-button>
+                <img alt="avatar" class="avatar" src="../../../../assets/user.jpg"/>User Name
                 <mat-icon>keyboard_arrow_down</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item (click)="logout()"><mat-icon>exit_to_app</mat-icon>Logout</button>
+                <button (click)="logout()" mat-menu-item>
+                    <mat-icon>exit_to_app</mat-icon>
+                    Logout
+                </button>
             </mat-menu>
         </div>
     </mat-toolbar-row>

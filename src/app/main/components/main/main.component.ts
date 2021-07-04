@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+    selector: 'app-main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
 
-    constructor() { }
-
     sidebarOpen = true;
+
+    constructor() {
+    }
+
     sidebarToggler() {
         this.sidebarOpen = !this.sidebarOpen;
     }
