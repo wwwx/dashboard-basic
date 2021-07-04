@@ -1,6 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {AuthService} from '../../../shared/auth.service';
-import {Router} from '@angular/router';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AuthService } from '../../../shared/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
